@@ -18,6 +18,10 @@
 
     <button onload="functionLoad()">The browser has....</button>
 
+    <br><br>
+
+    Name: <input type="text" id="name" onkeydown="functionKeyDown()">
+
     <script>
         function functionClick(){
             alert("hi, you click the button!");
@@ -33,6 +37,7 @@
 
         function functionKeyDown(){
             console.log("the user pushes");
+            document.getElementById("name").style.borderColor = "red";
         }
 
         function functionLoad() {
