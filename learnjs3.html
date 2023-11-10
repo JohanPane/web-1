@@ -7,22 +7,31 @@
 </head>
 <body>
     <h1>Learn JS part 3</h1>
+    <!-- <p id="demo"></p> -->
 
     <script>
-        const person = {
+        const student = {
             name: "Johan Pane",
-            nim: "2282037",
+            NIM: "2282037",
             major: "Faculty tecnology information",
             religion : "cristian",
             adress : "Depok city"
-        };
+        }
+
+        // document.getElementById("demo").innerHTML = student.name + "is" + student.NIM "nim." ;
+
+       
     </script>
 
-    <p>Name: ...</p>
-    <p>Nim: ...</p>
-    <p>Major: ...</p>
-    <p>Religion: ...</p>
-    <p>Adress: ...</p>
+    <p>Name: <script>document.write(student.name)</script></p>
+    <p>Nim: <span id=nim></span></p>
+    <p>Major: <script>document.write(student.major)</script></p>
+    <p>Religion: <script>document.write(student.religion)</script></p>
+    <p>Adress: <script>document.write(student.adress)</script></p>
+
+    <script> 
+    document.getElementById("nim").innerHTML = student.NIM;
+    </script>
     
 </body>
 </html>
